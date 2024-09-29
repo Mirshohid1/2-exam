@@ -6,7 +6,7 @@ class QuestionsForm(forms.ModelForm):
         model = Questions
         fields = ['name', 'email', 'text']
         widgets = {
-            'name': forms.TextInput(attrs={'placeholder': 'Enter a your full name'}),
-            'email': forms.EmailInput(attrs={'placeholder': 'Enter a your email'}),
-            'text': forms.Textarea(attrs={'placeholder': 'Enter a your question'})
+            'name': forms.TextInput(attrs={'placeholder': 'Enter your full name', 'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'placeholder': 'Enter your email', 'class': 'form-control'}),
+            'text': forms.Textarea(attrs={'placeholder': 'Enter your question', 'class': 'form-control'}),
         }
